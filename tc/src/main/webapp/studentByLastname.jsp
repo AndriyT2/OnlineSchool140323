@@ -21,7 +21,7 @@
     <tbody>
 <c:forEach var="student" items="${students}">
 <tr>
-        <td>${student.idSQL}</td>
+        <td>${student.personId}</td>
         <td>${student.lastname}</td>
         <td>${student.firstname}</td>
         <td>${student.phone}</td>

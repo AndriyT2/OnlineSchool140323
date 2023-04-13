@@ -18,7 +18,7 @@
     </thead>
     <tbody>
     <tr>
-        <td>${lecture.idSQL}</td>
+        <td>${lecture.lectureId}</td>
         <td>${lecture.name}</td>
         <td>${lecture.description}</td>
         <td>${lecture.creationDate}</td>

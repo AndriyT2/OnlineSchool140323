@@ -12,12 +12,16 @@
     <thead>
     <tr>
         <th>Type</th>
+        <th>Count</th>
+
     </tr>
     </thead>
     <tbody>
     <c:forEach var="am" items="${am}">
         <tr>
-            <td>${am}</td>
+            <td>${am.resourceType}</td>
+            <td>${am.typeTotal}</td>
+
         </tr>
     </c:forEach>
 

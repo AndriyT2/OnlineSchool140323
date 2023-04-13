@@ -15,7 +15,6 @@ public class FirstLectureController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println(l.lectureBefore2023());
         req.setAttribute("lecture", l.firstLecture());
         req.getRequestDispatcher("/firsLecture.jsp").forward(req, resp);
     }

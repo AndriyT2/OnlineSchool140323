@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
+    <title>Person.${conPersons.lastname}</title>
 </head>
 <body>
 <h2>Person.${conPersons.lastname}</h2>
@@ -19,7 +19,7 @@
     </thead>
     <tbody>
     <tr>
-        <td>${conPersons.idSQL}</td>
+        <td>${conPersons.personId}</td>
         <td>${conPersons.lastname}</td>
         <td>${conPersons.firstname}</td>
         <td>${conPersons.phone}</td>

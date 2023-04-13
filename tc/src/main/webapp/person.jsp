@@ -19,9 +19,9 @@
     <tbody>
     <c:forEach var="person" items="${persons}">
         <tr>
-            <td>${person.idSQL}</td>
+            <td>${person.personId}</td>
             <td>
-                <a href="${pageContext.request.contextPath}/concretePerson?personIdSQL=${person.idSQL}">${person.lastname}</a>
+                <a href="${pageContext.request.contextPath}/concretePerson?personIdSQL=${person.personId}">${person.lastname}</a>
             </td>
             <td>${person.role}</td>
         </tr>

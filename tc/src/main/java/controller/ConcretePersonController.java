@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import model.AmySQLForServlet;
 import models.Person;
+import osHibernate.PersonEntity;
 
 import java.io.IOException;
 
@@ -17,7 +18,7 @@ public class ConcretePersonController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int personIdSQL = Integer.parseInt(req.getParameter("personIdSQL"));
-        Person person = data.personById(personIdSQL);
+        PersonEntity person = data.personById(personIdSQL);
         req.setAttribute("conPersons", person);
         req.getRequestDispatcher("concretePerson.jsp").forward(req, resp);
     }
